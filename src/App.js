@@ -5,10 +5,10 @@ import Values from 'values.js';
 
 
 function App() {
-  const [currentColor, setCurrentColor] = useState('#f15025')
+  const [currentColor, setCurrentColor] = useState('#ac25f1')
   const [color, setColor] = useState('')
   const [error, setError] = useState(false)
-  const [list, setList] = useState(new Values('#f15025').all(10))
+  const [list, setList] = useState(new Values('#ac25f1').all(10))
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -47,7 +47,7 @@ function App() {
             type='text'
             value={color}
             onChange={(e) => setColor(e.target.value)}
-            placeholder='#f15025'
+            placeholder='#ac25f1'
             className={`${error ? 'error' : null}`}
           />
           <button className='btn' type='search'>
